@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    android:id="@+id/menu_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_visitor"
+        android:checkableBehavior="single"
+        android:visible="false">
+    </group>
+
+    <group
+        android:id="@+id/group_logged"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_auth"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_logged_list_all_spy" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_logged_map_position" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_logged_logout" />
+    </group>
+
+</menu>
